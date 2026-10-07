@@ -78,6 +78,12 @@ p+p{margin-top:14px}
 .voc-row .type{font-weight:700;color:var(--ink)}
 .voc-row .lbl{display:none;font-style:normal}
 
+/* also */
+.also{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.also div{border:1px solid var(--line);border-radius:8px;padding:16px 18px;background:#fff}
+.also b{display:block;font-size:15px;font-weight:700}
+.also span{display:block;font-size:14.5px;color:var(--ink-2);margin-top:4px;line-height:1.6}
+
 /* result */
 .result-strip{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
 .result-strip.one{grid-template-columns:1fr;max-width:400px}
@@ -157,7 +163,7 @@ p+p{margin-top:14px}
   .voc-row{grid-template-columns:1fr;gap:6px;border:1px solid var(--line);border-radius:8px;padding:16px 18px;background:#fff}
   .voc-row:first-child{border-top:1px solid var(--line)}
   .voc-row .lbl{display:block;font-size:12px;font-weight:700;color:var(--sub)}
-  .result-strip,.convo,.err-card{grid-template-columns:1fr}
+  .result-strip,.convo,.err-card,.also{grid-template-columns:1fr}
   .flow{grid-template-columns:1fr}
   .other li{grid-template-columns:1fr;gap:4px}
   .skills{grid-template-columns:1fr}
@@ -214,7 +220,7 @@ p+p{margin-top:14px}
 <section id="case1" class="case">
   <div class="wrap">
     <span class="case-no">경험 1 · 매장 고객 응대</span>
-    <h2>반복되는 고객 불만을 운영 개선으로 해결했습니다</h2>
+    <h2>반복되는 고객 불만을 해결하고,<br>매장 매출 순위를 9위에서 2위로 올렸습니다</h2>
     <p class="summary">프랜차이즈 매장 매니저 · 2021.02 – 2023.07 · 수원</p>
 
     <div class="block">
@@ -235,12 +241,21 @@ p+p{margin-top:14px}
     </div>
 
     <div class="block">
+      <h3>매출을 위해 함께 한 일</h3>
+      <p>고객 평가 점수가 오른다고 매출이 바로 따라오지는 않았습니다. 그래서 VOC 개선과 함께 두 가지를 더 진행했습니다.</p>
+      <div class="also">
+        <div><b>배달 리뷰 기반 프로세스 개선</b><span>배달 리뷰도 매장 VOC처럼 읽으며 고객이 겪는 불편을 확인했고, 이를 바탕으로 배달 프로세스를 개선했습니다. 리뷰가 점점 좋아지면서 배달 매출도 크게 늘었습니다.</span></div>
+        <div><b>고객 만족 이벤트</b><span>매장을 찾는 고객을 대상으로 고객 만족 이벤트를 진행했습니다.</span></div>
+      </div>
+    </div>
+
+    <div class="block">
       <h3>결과</h3>
       <div class="result-strip">
-        <div><strong>50점대 → 80점대</strong><span>고객 평가 점수 · 약 2개월</span></div>
-        <div><strong>9위 → 2위</strong><span>매출 순위 · 수원 12개 매장 기준</span></div>
+        <div><strong>50점대 → 80점대</strong><span>고객 평가 점수 · 약 2개월 · VOC 기반 운영 개선</span></div>
+        <div><strong>9위 → 2위</strong><span>매출 순위 · 수원 12개 매장 기준 · 운영 개선, 배달 개선, 이벤트</span></div>
       </div>
-      <p style="margin-top:16px">운영 방식을 바꾼 뒤 약 2개월 동안 고객 평가 점수가 50점 안팎에서 80점대로 올랐고, 같은 기간 매출 순위도 9위에서 2위가 됐습니다. 매출 순위에는 다른 요인도 영향을 줬을 수 있습니다.</p>
+      <p style="margin-top:16px">VOC를 바탕으로 운영 방식을 바꾼 뒤 약 2개월 동안 고객 평가 점수가 50점 안팎에서 80점대로 올랐습니다. 배달 리뷰를 바탕으로 배달 프로세스를 개선하면서 배달 매출이 늘었고, 고객 만족 이벤트도 함께 진행해 같은 기간 매출 순위가 9위에서 2위로 올랐습니다.</p>
     </div>
 
     <p class="lesson"><b>배운 점</b> · 고객 불만은 운영 어딘가에서 같은 불편이 반복되고 있다는 신호일 수 있다는 걸 배웠습니다.</p>
